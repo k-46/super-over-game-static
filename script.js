@@ -17,7 +17,7 @@ let i=0;
 let s1=0;let s2=0;
 
 strikebtn.addEventListener("click",function(){
-    let ran=Math.floor(Math.random()*7)+1;
+    let ran=Math.floor(Math.random()*7)+1;     
 if(i>=12){
     if(s1>s2){
         alert("IND Won");
@@ -54,6 +54,10 @@ else{
     }
 }
     i++;
+if(i<7 && w1==2){
+        i=6;}
+if(i>7 && w2==2){
+        i=12;}
 })
 
 
